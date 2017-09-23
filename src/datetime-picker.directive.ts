@@ -345,7 +345,7 @@ export class NguiDatetimePickerDirective implements OnInit, OnChanges {
 
       if (thisElBcr.bottom + nguiDatetimePickerElBcr.height > window.innerHeight) {
         this.nguiDatetimePickerEl.style.bottom =
-          (thisElBcr.bottom - window.innerHeight + 15) + 'px';
+          (thisElBcr.bottom - window.innerHeight + nguiDatetimePickerElBcr.height - 15) + 'px';
       }
       else {
         // otherwise, show below
